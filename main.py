@@ -1,6 +1,6 @@
 print('hello mars')
 try:
-    with open("C:/Users/USER/Desktop/Proj/SC/mission_computer_main.log",'r',encoding='utf-8') as f:
+    with open("mission_computer_main.log",'r',encoding='utf-8') as f:
        for line in f:
          print(line.rstrip())
 except FileNotFoundError as e:

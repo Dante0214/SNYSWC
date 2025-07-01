@@ -1,34 +1,42 @@
-print('Hello Mars')
-arr=[]
-try:
-    with open("mission_computer_main.log",'r',encoding='utf-8') as f:
-        header = f.readline().strip().split(',')
-        for line in f:
-            line = line.strip().split(',')
-            if len(line) ==len(header):
-               arr.append(dict(zip(header,line)))
-            # print(line)
-            arr.append(line)
+import json
 
-except FileNotFoundError as e:
-   print(e)
-except PermissionError as e:
-   print(e)
-except UnicodeDecodeError as e:
-   print(e)
-except IOError as e:
-   print(e)
+json_file = "mission_computer_main.json"
+log_file = "mission_computer_main.log"
 
-print(arr)
-# print(arr[0])
-# dictionaries = [{arr[i][j]: arr[i][j+1] for j in range(0, len(arr[i]), 2)} for i in range(len(arr))]
-# print(dictionaries)
-# print(arr)
-# mission_computer_main.log 파일을 읽어들여서 출력한다. 콤마를 기준으로 날짜 및 시간과 로그 내용을 분류해서 Python의 리스트(List) 객체로 전환한다.
-# (여기서 말하는 리스트는 배열이 아니라 파이썬에서 제공하는 리스트 타입의 객체를 의미한다.)
-# 전환된 리스트 객체를 화면에 출력한다.
-# 리스트 객체를 시간의 역순으로 정렬(sort)한다.
-# 리스트 객체를 사전(Dict) 객체로 전환한다.
-# 사전 객체로 전환된 내용을 mission_computer_main.json 파일로 저장하는데 파일 포멧은 JSON(JavaScript Ontation)으로 저장한다.
+logs = []
 
-# ,로 슬라이싱 하고 이차원배열로 arr[i][0] 솔트 
+with open(log_file, "r", encoding="utf-8") as f:
+    # 1. 헤더 읽기 및 필드 분리
+    header_line = f.readline().strip()
+    headers = header_line.split(",")
+
+    # 2. 데이터 처리
+    for line in f:
+        line = line.strip()
+        if not line:
+            continue
+        fields = line.split(",", len(headers) - 1)  # 헤더 수에 맞게 분리
+
+        # 3. 딕셔너리 형태로 매핑
+        log_entry = dict(zip(headers, fields))
+        logs.append(log_entry)
+print(logs)
+# 4. 시간 기준 역순 정렬
+logs.sort(reverse=True, key=lambda x: x["timestamp"])
+
+# 5. id 추가 및 최종 리스트 변환
+log_list = []
+for idx, log in enumerate(logs, start=1):
+    log_entry = {
+        "id": idx,
+        "timestamp": log["timestamp"],
+        "event_type": log["event"],
+        "message": log["message"]
+    }
+    log_list.append(log_entry)
+
+# 6. JSON 저장
+with open(json_file, "w", encoding="utf-8") as f:
+    json.dump(log_list, f, indent=4, ensure_ascii=False)
+
+print(f"=== JSON 파일 '{json_file}' 저장 완료 ===")

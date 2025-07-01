@@ -1,0 +1,212 @@
+[
+    {
+        "id": 1,
+        "timestamp": "2023-08-27 12:00:00",
+        "event_type": "INFO",
+        "message": "Center and mission control systems powered down."
+    },
+    {
+        "id": 2,
+        "timestamp": "2023-08-27 11:40:00",
+        "event_type": "INFO",
+        "message": "Oxygen tank explosion."
+    },
+    {
+        "id": 3,
+        "timestamp": "2023-08-27 11:35:00",
+        "event_type": "INFO",
+        "message": "Oxygen tank unstable."
+    },
+    {
+        "id": 4,
+        "timestamp": "2023-08-27 11:30:00",
+        "event_type": "INFO",
+        "message": "Mission completed successfully. Recovery team dispatched."
+    },
+    {
+        "id": 5,
+        "timestamp": "2023-08-27 11:28:00",
+        "event_type": "INFO",
+        "message": "Touchdown confirmed. Rocket safely landed."
+    },
+    {
+        "id": 6,
+        "timestamp": "2023-08-27 11:25:00",
+        "event_type": "INFO",
+        "message": "Main parachutes deployed. Rocket descent rate reducing."
+    },
+    {
+        "id": 7,
+        "timestamp": "2023-08-27 11:20:00",
+        "event_type": "INFO",
+        "message": "Heat shield performing as expected during reentry."
+    },
+    {
+        "id": 8,
+        "timestamp": "2023-08-27 11:15:00",
+        "event_type": "INFO",
+        "message": "Reentry sequence started. Atmospheric drag noticeable."
+    },
+    {
+        "id": 9,
+        "timestamp": "2023-08-27 11:10:00",
+        "event_type": "INFO",
+        "message": "Initiating deorbit maneuvers for rocket's reentry."
+    },
+    {
+        "id": 10,
+        "timestamp": "2023-08-27 11:05:00",
+        "event_type": "INFO",
+        "message": "Satellite deployment successful. Mission objectives achieved."
+    },
+    {
+        "id": 11,
+        "timestamp": "2023-08-27 11:00:00",
+        "event_type": "INFO",
+        "message": "Orbital operations initiated. Satellite deployment upcoming."
+    },
+    {
+        "id": 12,
+        "timestamp": "2023-08-27 10:57:00",
+        "event_type": "INFO",
+        "message": "Entering planned orbit around Earth."
+    },
+    {
+        "id": 13,
+        "timestamp": "2023-08-27 10:55:00",
+        "event_type": "INFO",
+        "message": "Second stage burn nominal. Rocket velocity increasing."
+    },
+    {
+        "id": 14,
+        "timestamp": "2023-08-27 10:52:00",
+        "event_type": "INFO",
+        "message": "Navigation systems show nominal performance."
+    },
+    {
+        "id": 15,
+        "timestamp": "2023-08-27 10:50:00",
+        "event_type": "INFO",
+        "message": "Orbital insertion calculations initiated."
+    },
+    {
+        "id": 16,
+        "timestamp": "2023-08-27 10:48:00",
+        "event_type": "INFO",
+        "message": "Payload fairing jettisoned. Satellite now exposed."
+    },
+    {
+        "id": 17,
+        "timestamp": "2023-08-27 10:45:00",
+        "event_type": "INFO",
+        "message": "Second stage ignition. Rocket continues its ascent."
+    },
+    {
+        "id": 18,
+        "timestamp": "2023-08-27 10:42:00",
+        "event_type": "INFO",
+        "message": "Main engine cutoff confirmed. Stage separation initiated."
+    },
+    {
+        "id": 19,
+        "timestamp": "2023-08-27 10:40:00",
+        "event_type": "INFO",
+        "message": "First stage engines throttled down as planned."
+    },
+    {
+        "id": 20,
+        "timestamp": "2023-08-27 10:37:00",
+        "event_type": "INFO",
+        "message": "Max-Q passed. Vehicle is stable."
+    },
+    {
+        "id": 21,
+        "timestamp": "2023-08-27 10:35:00",
+        "event_type": "INFO",
+        "message": "Approaching max-Q. Aerodynamic pressure increasing."
+    },
+    {
+        "id": 22,
+        "timestamp": "2023-08-27 10:32:00",
+        "event_type": "INFO",
+        "message": "Initial telemetry received. Rocket is on its trajectory."
+    },
+    {
+        "id": 23,
+        "timestamp": "2023-08-27 10:30:00",
+        "event_type": "INFO",
+        "message": "Liftoff! Rocket has left the launchpad."
+    },
+    {
+        "id": 24,
+        "timestamp": "2023-08-27 10:27:00",
+        "event_type": "INFO",
+        "message": "Engines at maximum thrust. Liftoff imminent."
+    },
+    {
+        "id": 25,
+        "timestamp": "2023-08-27 10:25:00",
+        "event_type": "INFO",
+        "message": "Engine ignition sequence started."
+    },
+    {
+        "id": 26,
+        "timestamp": "2023-08-27 10:23:00",
+        "event_type": "INFO",
+        "message": "Countdown sequence initiated."
+    },
+    {
+        "id": 27,
+        "timestamp": "2023-08-27 10:20:00",
+        "event_type": "INFO",
+        "message": "Final system checks complete. Rocket is ready for launch."
+    },
+    {
+        "id": 28,
+        "timestamp": "2023-08-27 10:18:00",
+        "event_type": "INFO",
+        "message": "Cargo bay secured and sealed properly."
+    },
+    {
+        "id": 29,
+        "timestamp": "2023-08-27 10:15:00",
+        "event_type": "INFO",
+        "message": "Life support systems nominal."
+    },
+    {
+        "id": 30,
+        "timestamp": "2023-08-27 10:12:00",
+        "event_type": "INFO",
+        "message": "Propulsion check: Thrusters responding as expected."
+    },
+    {
+        "id": 31,
+        "timestamp": "2023-08-27 10:10:00",
+        "event_type": "INFO",
+        "message": "Avionics check: All systems functional."
+    },
+    {
+        "id": 32,
+        "timestamp": "2023-08-27 10:08:00",
+        "event_type": "INFO",
+        "message": "Pre-launch checklist initiated."
+    },
+    {
+        "id": 33,
+        "timestamp": "2023-08-27 10:05:00",
+        "event_type": "INFO",
+        "message": "Communication established with mission control."
+    },
+    {
+        "id": 34,
+        "timestamp": "2023-08-27 10:02:00",
+        "event_type": "INFO",
+        "message": "Power systems online. Batteries at optimal charge."
+    },
+    {
+        "id": 35,
+        "timestamp": "2023-08-27 10:00:00",
+        "event_type": "INFO",
+        "message": "Rocket initialization process started."
+    }
+]

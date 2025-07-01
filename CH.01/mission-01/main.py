@@ -11,4 +11,3 @@ except UnicodeDecodeError as e:
    print(e)
 except IOError as e:
    print(e)
-
